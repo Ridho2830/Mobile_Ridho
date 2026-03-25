@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    tools:context=".MainActivity">
+
+    <!-- Container utama -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Judul Aplikasi -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kalkulator IPK"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/Primary"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Nama Matkul -->
+        <EditText
+            android:id="@+id/etMatkul"
+            android:hint="@string/placeholder_matkul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/Text"
+            android:textColor="@color/Text"/>
+
+        <!-- Nilai -->
+        <EditText
+            android:id="@+id/etNilai"
+            android:hint="@string/placeholder_nilai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColorHint="@color/Text"
+            android:textColor="@color/Text"/>
+
+        <!-- Container Tombol -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnTambah"
+                android:text="@string/btn_tambah"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/Primary"
+                android:textColor="@color/White"/>
+
+            <Button
+                android:id="@+id/btnHitung"
+                android:text="@string/btn_hitung"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/Secondary"
+                android:textColor="@color/White"/>
+
+            <Button
+                android:id="@+id/btnReset"
+                android:text="Reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#FF5252"
+                android:textColor="@color/White"/>
+        </LinearLayout>
+
+        <!-- Divider / Garis Pemisah -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar Mata Kuliah:"
+            android:textStyle="italic"
+            android:textColor="@color/Text"/>
+
+        <!-- List -->
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="#EEEEEE"
+            android:dividerHeight="1dp"
+            android:layout_marginTop="5dp"/>
+
+        <!-- Hasil -->
+        <CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="4dp">
+
+            <TextView
+                android:id="@+id/tvHasil"
+                android:text="@string/placeholder_hasil"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/Primary"
+                android:padding="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"/>
+        </CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

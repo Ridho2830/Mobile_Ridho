@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Primary">#6200EE</color> <!-- Ungu (TEKNIK wkwkw) -->
+    <color name="Background">#F5F5F5</color> <!-- Abu-abu -->
+    <color name="Text">#212121</color> <!-- Hitam -->
+    <color name="White">#FFFFFF</color>
+</resources>

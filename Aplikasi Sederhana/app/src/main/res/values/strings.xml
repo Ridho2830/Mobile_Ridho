@@ -1,0 +1,14 @@
+<resources>
+<!--Judul-->
+    <string name="app_name">Aplikasi Konversi IPK</string>
+<!--Hint/Placeholder-->
+    <string name="placeholder_matkul">Masukkan Mata Kuliah</string>
+    <string name="placeholder_nilai">Nilai (0-100)</string>
+    <string name="placeholder_hasil">IPK: -</string>
+    <string name="daftar_mata_kuliah">Daftar Mata Kuliah:</string>
+<!--Button-->
+    <string name="btn_tambah">Tambah</string>
+    <string name="btn_hitung">Hitung IPK</string>
+    <string name="btn_reset">Reset</string>
+
+</resources>

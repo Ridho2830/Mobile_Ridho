@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    tools:context=".MainActivity">
+
+    <!--Container Utama-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Judul -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/Primary"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Nama Matkul -->
+        <EditText
+            android:id="@+id/etMatkul"
+            android:autofillHints=""
+            android:hint="@string/placeholder_matkul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType=""
+            android:textColor="@color/Text"
+            android:textColorHint="#9E9E9E"/>
+
+        <!-- Nilai -->
+        <EditText
+            android:id="@+id/etNilai"
+            android:autofillHints=""
+            android:hint="@string/placeholder_nilai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/Text"
+            android:textColorHint="#9E9E9E"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Container Tombol -->
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnTambah"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/btn_tambah"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/Primary"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/btnHitung"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/btn_hitung"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/Primary"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/btnReset"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/btn_reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#EF5350"
+                android:textColor="@color/White"/>
+        </LinearLayout>
+
+        <!-- Hasil -->
+        <TextView
+            android:id="@+id/tvHasil"
+            android:text="@string/placeholder_hasil"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/Primary"
+            android:padding="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/daftar_mata_kuliah"
+            android:textStyle="bold"
+            android:textColor="@color/Text"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- List -->
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/White"
+            android:divider="#EEEEEE"
+            android:dividerHeight="1dp"
+            android:elevation="2dp"
+            android:padding="4dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
