@@ -61,7 +61,6 @@ class MainActivity : AppCompatActivity() {
             var bobot = 0.0
             var bobotStr = ""
 
-
             if (nilaiInt >= 85){
                 bobot = 4.0
                 bobotStr = "A"
@@ -118,7 +117,6 @@ class MainActivity : AppCompatActivity() {
 
             val ipk = total / listNilai.size
 
-            // Format desimal
             tvHasil.text = "IPK : %.2f".format(ipk)
         }
 
