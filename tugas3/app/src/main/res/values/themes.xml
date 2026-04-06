@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Tugas3" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/cyan_accent</item>
+        <item name="colorPrimaryVariant">@color/cyan_dim</item>
+        <item name="colorOnPrimary">@color/bg_dark</item>
+        <item name="colorSecondary">@color/magenta_accent</item>
+        <item name="colorOnSecondary">@color/bg_dark</item>
+        <item name="android:colorBackground">@color/bg_dark</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+
+        <!-- TextInputLayout style -->
+        <item name="textInputStyle">@style/FuturisticTextInput</item>
+        <item name="materialButtonStyle">@style/FuturisticButton</item>
+        <item name="chipStyle">@style/FuturisticChip</item>
+    </style>
+
+    <style name="FuturisticTextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/border_glow</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="boxBackgroundColor">#0A1428</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.RoundedSmall</item>
+    </style>
+
+    <style name="ShapeAppearance.RoundedSmall" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="FuturisticButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/cyan_accent</item>
+        <item name="android:textColor">@color/bg_dark</item>
+        <item name="android:letterSpacing">0.15</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="FuturisticChip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="chipBackgroundColor">@color/cyan_accent</item>
+        <item name="android:textColor">@color/bg_dark</item>
+    </style>
+
+    <style name="SectionLabel" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">0.2</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="ProfileValueText" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="buttonTint">@color/cyan_accent</item>
+    </style>
+
+    <style name="CheckBoxStyle" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="buttonTint">@color/cyan_accent</item>
+    </style>
+</resources>

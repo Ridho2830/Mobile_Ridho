@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StudentID</string>
+    <string name="mahasiswa">Mahasiswa</string>
+    <string name="identitas">Identitas</string>
+    <string name="registrasi">REGISTRASI</string>
+    <string name="profil">PROFIL MAHASISWA</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="nim">NIM</string>
+    <string name="program_studi">Program Studi</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="hobi">Hobi</string>
+    <string name="tampilkan_profil">TAMPILKAN PROFIL</string>
+    <string name="laki_laki">Laki-laki</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="gaming">Gaming</string>
+    <string name="musik">Musik</string>
+    <string name="olahraga">Olahraga</string>
+    <string name="membaca">Membaca</string>
+    <string name="coding">Coding</string>
+</resources>

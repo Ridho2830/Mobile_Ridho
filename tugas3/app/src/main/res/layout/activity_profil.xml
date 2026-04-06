@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- TOP BAR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="24dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:background="@drawable/bg_card"
+                android:tint="@color/cyan_accent"
+                android:padding="6dp"
+                android:contentDescription="Back" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STUDENT"
+                    android:textColor="@color/cyan_accent"
+                    android:textSize="10sp"
+                    android:letterSpacing="0.4"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PROFILE"
+                    android:textColor="@color/text_primary"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- AVATAR + NAMA HERO CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_cyan"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="28dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Avatar circle -->
+            <FrameLayout
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/bg_avatar"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/tvAvatarInitial"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/bg_dark"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:letterSpacing="0.02" />
+
+            <TextView
+                android:id="@+id/tvNim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/cyan_accent"
+                android:textSize="13sp"
+                android:letterSpacing="0.15"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- INFO CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INFORMASI AKADEMIK"
+                style="@style/SectionLabel"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Program Studi row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PROGRAM STUDI"
+                    style="@style/SectionLabel"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tvProdi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/ProfileValueText" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_glow"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Jenis Kelamin row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JENIS KELAMIN"
+                    style="@style/SectionLabel"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tvJenisKelamin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/ProfileValueText" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- HOBI CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOBI &amp; MINAT"
+                style="@style/SectionLabel"
+                android:layout_marginBottom="14dp" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupHobi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:chipSpacingHorizontal="8dp"
+                app:chipSpacingVertical="6dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

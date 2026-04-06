@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_dark">#070B14</color>
+    <color name="bg_card">#0D1526</color>
+    <color name="bg_card2">#111C35</color>
+    <color name="cyan_accent">#00E5FF</color>
+    <color name="cyan_dim">#0097A7</color>
+    <color name="cyan_glow">#80E5FF</color>
+    <color name="magenta_accent">#E040FB</color>
+    <color name="text_primary">#E8F4FF</color>
+    <color name="text_secondary">#7B9EC0</color>
+    <color name="border_glow">#1A3A5C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="error_red">#FF4A6E</color>
+
+    <color name="colorPrimary">#00E5FF</color>
+    <color name="colorPrimaryDark">#070B14</color>
+    <color name="colorAccent">#E040FB</color>
+</resources>
