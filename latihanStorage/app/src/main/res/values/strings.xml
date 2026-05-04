@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">latihanStorage</string>
+    <string name="mode">Mode</string>
+    <string name="nim">NIM</string>
+    <string name="hint_nim">Masukkan NIM Anda</string>
+    <string name="nama">Nama</string>
+    <string name="hint_nama">Masukkan Nama Anda</string>
+    <string name="simpan">Tombol Simpan</string>
+    <string name="delete">Tombol Delete</string>
 </resources>

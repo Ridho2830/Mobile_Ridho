@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">TugasStorage</string>
+    <string name="app_name">Mahasiswa App</string>
+
+    <!-- Label umum -->
+    <string name="label_nim">NIM</string>
+    <string name="label_nama">Nama Lengkap</string>
+    <string name="label_jurusan">Jurusan</string>
+    <string name="label_ipk">IPK (0.0 - 4.0)</string>
+
+    <!-- Tombol -->
+    <string name="btn_simpan">Simpan</string>
+    <string name="btn_tambah">Tambah Mahasiswa</string>
+    <string name="btn_hapus">Hapus</string>
+
+    <!-- Title halaman -->
+    <string name="title_daftar_mahasiswa">Daftar Mahasiswa</string>
+    <string name="title_input_mahasiswa">Input Data Mahasiswa</string>
+
+    <!-- Pesan -->
+    <string name="msg_field_kosong">Semua field wajib diisi!</string>
+    <string name="msg_ipk_invalid">IPK harus antara 0.0 – 4.0</string>
+    <string name="msg_data_tersimpan">Data berhasil disimpan!</string>
+    <string name="msg_data_kosong">Belum ada data mahasiswa</string>
+
+    <!-- Prefix item list -->
+    <string name="prefix_nim">NIM: %s</string>
+    <string name="prefix_ipk">IPK: %s</string>
 </resources>

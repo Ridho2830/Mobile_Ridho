@@ -1,17 +1,14 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.ksp)
 }
 
 android {
-    namespace = "psti.unram.latihanstorage"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    namespace = "psti.unram.tugasstorage"
+    compileSdk = 36
 
     defaultConfig {
-        applicationId = "psti.unram.latihanstorage"
+        applicationId = "psti.unram.tugasstorage"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
@@ -44,4 +41,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Room — pakai alias dari toml, ganti kapt → ksp
+    implementation(libs.androidx.room.runtime)
+    ksp(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
 }

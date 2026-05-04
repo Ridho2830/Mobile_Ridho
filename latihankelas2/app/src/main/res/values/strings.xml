@@ -1,0 +1,65 @@
+
+    <resources>
+    <!-- ... string lainnya ... -->
+    <string name="app_name">latihankelas2</string>
+
+    <string-array name="data_name">
+        <item>Ahmad Dahlan</item>
+        <item>Ahmad Yani</item>
+        <item>Sutomo</item>
+        <item>Gatot Soebroto</item>
+        <item>Ki Hadjar Dewantara</item>
+        <item>Mohammad Hatta</item>
+        <item>Soedirman</item>
+        <item>Soekarno</item>
+        <item>Soepomo</item>
+        <item>Tan Malaka</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>Salah seorang ulama dan khatib terkemuka di Masjid Besar Kasultanan Yogyakarta
+            pada masa itu. KH. Ahmad Dahlan telah mempelopori kebangkitan ummat Islam untuk
+            menyadari nasibnya sebagai bangsa terjajah yang masih harus belajar dan berbuat.</item>
+        <item>Jenderal TNI Anumerta Ahmad Yani (lahir di Purworejo, 19 Juni 1922 – meninggal
+            di Lubang Buaya, 1 Oktober 1965) adalah komandan Tentara Nasional Indonesia
+            Angkatan Darat, dibunuh oleh anggota Gerakan 30 September.</item>
+        <item>Sutomo (lahir di Surabaya, 3 Oktober 1920 – meninggal 7 Oktober 1981) lebih
+            dikenal sebagai Bung Tomo, pahlawan yang terkenal karena peranannya membangkitkan
+            semangat rakyat melawan penjajah Belanda, berakhir dengan pertempuran 10 November 1945.</item>
+        <item>Jenderal TNI (Purn.) Gatot Soebroto (lahir di Sumpiuh, 10 Oktober 1907 – meninggal
+            di Jakarta, 11 Juni 1962) adalah tokoh perjuangan militer Indonesia dalam merebut
+            kemerdekaan dan pahlawan nasional Indonesia.</item>
+        <item>Raden Mas Soewardi Soerjaningrat, sejak 1922 menjadi Ki Hadjar Dewantara
+            (lahir di Pakualaman, 2 Mei 1889 – meninggal di Yogyakarta, 26 April 1959)
+            adalah aktivis pergerakan kemerdekaan Indonesia dan pendiri Perguruan Taman Siswa.</item>
+        <item>Dr.(HC) Drs. H. Mohammad Hatta, dikenal sebagai Bung Hatta (lahir di Bukittinggi,
+            12 Agustus 1902 – meninggal di Jakarta, 14 Maret 1980) adalah tokoh pejuang,
+            negarawan, ekonom, dan Wakil Presiden Indonesia yang pertama.</item>
+        <item>Jenderal Besar Raden Soedirman (lahir 24 Januari 1916 – meninggal 29 Januari 1950)
+            adalah seorang perwira tinggi Indonesia pada masa Revolusi Nasional Indonesia dan
+            menjadi panglima besar Tentara Nasional Indonesia pertama.</item>
+        <item>Dr.(H.C.) Ir. H. Soekarno (lahir di Surabaya, 6 Juni 1901 – meninggal di Jakarta,
+            21 Juni 1970) adalah Presiden pertama Republik Indonesia yang menjabat pada periode
+            1945–1967 dan Proklamator Kemerdekaan Indonesia.</item>
+        <item>Prof. Mr. Dr. Soepomo (lahir di Sukoharjo, 22 Januari 1903 – meninggal di Jakarta,
+            12 September 1958) adalah seorang pahlawan nasional Indonesia, dikenal sebagai
+            arsitek Undang-undang Dasar 1945.</item>
+        <item>Tan Malaka atau Ibrahim gelar Datuk Sutan Malaka (lahir 2 Juni 1897 – meninggal
+            21 Februari 1949) adalah seorang pembela kemerdekaan Indonesia, tokoh Partai Komunis
+            Indonesia, dan pendiri Partai Murba.</item>
+    </string-array>
+
+    <string-array name="data_photo">
+        <item>https://upload.wikimedia.org/wikipedia/commons/8/87/Ahmad_Dahlan.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/3/3f/Ahmad_Yani.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/e/ed/Bung_Tomo.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/b/be/Col_Gatot_Subroto%2C_Kenang-Kenangan_Pada_Panglima_Besar_Letnan_Djenderal_Soedirman%2C_p27.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/3/3a/Ki_Hadjar_Dewantara_Mimbar_Umum_18_October_1949_p2.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/VP_Hatta.jpg/330px-VP_Hatta.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Sudirman.jpg/486px-Sudirman.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Presiden_Sukarno.jpg/330px-Presiden_Sukarno.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/c/c3/Supomo_from_President_Website.JPG</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/TanMalaka_DariPendjara_ed3.jpg/330px-TanMalaka_DariPendjara_ed3.jpg</item>
+    </string-array>
+
+    </resources>

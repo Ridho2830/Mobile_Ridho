@@ -1,5 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Brand utama -->
+    <color name="primary">#1565C0</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="primary_light">#E3F2FD</color>
+    <color name="accent">#FF6F00</color>
+
+    <!-- Background -->
+    <color name="background_page">#F0F4F8</color>
+    <color name="background_card">#FFFFFF</color>
+    <color name="background_toolbar">#1565C0</color>
+
+    <!-- Text -->
+    <color name="text_primary">#1A1A2E</color>
+    <color name="text_secondary">#5C6BC0</color>
+    <color name="text_hint">#9E9E9E</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- IPK badge -->
+    <color name="ipk_high">#2E7D32</color>
+    <color name="ipk_mid">#F57F17</color>
+    <color name="ipk_low">#C62828</color>
+
+    <!-- Divider & border -->
+    <color name="divider">#E0E0E0</color>
+    <color name="fab_color">#FF6F00</color>
 </resources>
