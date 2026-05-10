@@ -2,12 +2,16 @@ package psti.unram.tugaspasien
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
+import android.widget.Button
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -22,6 +26,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var rvPasiens: RecyclerView
     private lateinit var progressBar: ProgressBar
     private lateinit var tvUserName: TextView
+    private lateinit var btnLogout: Button
     private lateinit var fabAdd: FloatingActionButton
     private lateinit var adapter: PasienAdapter
     private lateinit var tokenManager: TokenManager
@@ -30,15 +35,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Initialize Toolbar
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
+
         tokenManager = TokenManager(this)
 
         rvPasiens = findViewById(R.id.rvPasiens)
         progressBar = findViewById(R.id.progressBar)
         tvUserName = findViewById(R.id.tvUserName)
+        btnLogout = findViewById(R.id.btnLogout)
         fabAdd = findViewById(R.id.fabAdd)
 
         val userName = tokenManager.getUserName() ?: "User"
-        tvUserName.text = "Selamat Datang, $userName"
+        tvUserName.text = getString(R.string.welcome_user, userName)
+
+        btnLogout.setOnClickListener {
+            performLogout()
+        }
 
         adapter = PasienAdapter(
             onEditClick = { pasien ->
@@ -68,6 +82,29 @@ class MainActivity : AppCompatActivity() {
         loadPasiens()
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_logout -> {
+                performLogout()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    private fun performLogout() {
+        tokenManager.clearAuthData()
+        val intent = Intent(this, LoginActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        startActivity(intent)
+        finish()
+    }
+
     override fun onResume() {
         super.onResume()
         loadPasiens()
@@ -91,10 +128,6 @@ class MainActivity : AppCompatActivity() {
                 if (response.isSuccessful && response.body()?.success == true) {
                     val pasiens = response.body()?.data ?: emptyList()
                     adapter.setData(pasiens)
-
-                    if (pasiens.isEmpty()) {
-                        // Tidak perlu showMessage di sini jika memang datanya kosong, cukup listnya kosong.
-                    }
                 } else {
                     showMessage("Gagal mengambil data: ${response.code()}")
                 }
